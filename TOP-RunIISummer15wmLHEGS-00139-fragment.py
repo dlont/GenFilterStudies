@@ -71,6 +71,6 @@ mcNjetsFilter = cms.EDFilter("NJetsMC",
 )
 
 ProductionFilterSequence = cms.Sequence(lheGenericFilter+generator)
-#ProductionFilterSequence = cms.Sequence(lheGenericFilter+generator*genHTFilter)
+ProductionFilterSequence = cms.Sequence(lheGenericFilter+generator*genHTFilter)
 #ProductionFilterSequence = cms.Sequence(lheGenericFilter+generator*mcNjetsFilter)
 #ProductionFilterSequence = cms.Sequence(lheGenericFilter+generator*genHTFilter*mcNjetsFilter)
