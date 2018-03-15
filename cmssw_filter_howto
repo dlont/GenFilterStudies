@@ -1,0 +1,14 @@
+cmsrel CMSSW_7_1_31
+cd CMSSW_7_1_31
+cmsenv
+git cms-addpkg  GeneratorInterface/GenFilters
+cd src
+cp /storage_mnt/storage/user/dlontkov/4topMC/filter2016/CMSSW_7_1_31/src/GeneratorInterface/GenFilters/python/genHTFilter_cfi.py GeneratorInterface/GenFilters/python
+cp /storage_mnt/storage/user/dlontkov/4topMC/filter2016/CMSSW_7_1_31/src/GeneratorInterface/GenFilters/src/GenHTFilter.cc GeneratorInterface/GenFilters/src
+cp -a /storage_mnt/storage/user/dlontkov/4topMC/filter2016/CMSSW_7_1_31/src/Configuration .
+scram b
+cd ../..
+cp /storage_mnt/storage/user/dlontkov/4topMC/filter2016/TOP-RunIISummer15wmLHEGS-00139-testeff .
+source TOP-RunIISummer15wmLHEGS-00139-testeff
+cmsRun -n8 TOP-RunIISummer15wmLHEGS-00139_1_cfg.py
+
