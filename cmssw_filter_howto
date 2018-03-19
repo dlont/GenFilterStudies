@@ -12,3 +12,6 @@ cp /storage_mnt/storage/user/dlontkov/4topMC/filter2016/TOP-RunIISummer15wmLHEGS
 source TOP-RunIISummer15wmLHEGS-00139-testeff
 cmsRun -n8 TOP-RunIISummer15wmLHEGS-00139_1_cfg.py
 
+##-----------
+The filter is integrated in **CMSSW_7_1_32**
+
